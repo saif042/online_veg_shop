@@ -264,7 +264,7 @@ public class OnlineVegetableShoppingTests1 {
 	     */
 	    @Test
 	    public void testAddRegistration(){
-	      Registrationform reg = new Registrationform(1,"14th ward subhash nagar","Sandur","Sanjana","sanju@123","Karnataka");        
+	      Registrationform reg = new Registrationform(1,"14th ward subhash nagar","Sandur","Sanjana","sanju@123","Karnataka", null);        
 	        Mockito.when(regRepo.save(reg)).thenReturn(reg);
 	        String urlTemplate;
 	        MockHttpServletRequestBuilder mockRequest = (MockHttpServletRequestBuilder) ((Object) MockMvcRequestBuilders.post(urlTemplate="/addreg")
